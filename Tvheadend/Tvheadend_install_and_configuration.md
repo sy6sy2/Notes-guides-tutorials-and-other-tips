@@ -20,10 +20,10 @@ cd tvheadend
 sudo ./configure
 ```
 >_if necessary_
-
 ```bash
 sudo ./configure --enable-ffmpeg_static --enable-hdhomerun_client --enable-hdhomerun_static
 ```
+
 ```bash
 sudo make -j8
 sudo make install
@@ -36,10 +36,11 @@ sudo groupadd video
 sudo adduser hts
 sudo usermod -a -G video hts
 ```
+>_Optionnal_
 ```bash
 sudo adduser hts sudo
 ```
-> _Optionnal_
+
 
 ## Create daemon
 The daemon allows us to use the _sudo tvheadend start_ and _sudo tvheadend stop_ command. Furthermore we can run Tvheadend on Debian start-up.
@@ -50,10 +51,12 @@ sudo nano /etc/init.d/tvheadend
 ```bash
 sudo chmod 755 /etc/init.d/tvheadend
 ```
+
+>_Only if you want to run Tvheadend on Debian start-up_
 ```bash
 sudo update-rc.d tvheadend defaults
 ```
->_Only if you want to run Tvheadend on Debian start-up_
+
 
 ## First run
 The first run is particular because you have to run Tvheadend without user access control. After the Tvheadend wizard allow you to create an admin user.
@@ -63,14 +66,16 @@ su hts
 ```
 Now open a browser at _tvheadend_ip_:9981 and follow the Tvheadend wizard.
 Once the wizard completed come back to the Tvheadend bash.
+> _To kill the Tvheadend process_
 ```bash
 Ctrl+C
 ```
-> _To kill the Tvheadend process_
+
+>_To start Tvheadend_
 ```bash
 sudo service tvheadend start
 ```
->_To start Tvheadend_
+
 
 ## Divers
 ### Tvheadend log
