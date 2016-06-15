@@ -20,6 +20,7 @@ cd tvheadend
 sudo ./configure
 ```
 >_if necessary_
+
 ```bash
 sudo ./configure --enable-ffmpeg_static --enable-hdhomerun_client --enable-hdhomerun_static
 ```
