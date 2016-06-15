@@ -44,10 +44,11 @@ sudo adduser hts sudo
 
 ## Create daemon
 The daemon allows us to use the _sudo tvheadend start_ and _sudo tvheadend stop_ command. Furthermore we can run Tvheadend on Debian start-up.
+>_Copy the entire tvheadend_daemon file from repo in the file /etc/init.d/tvheadend_
 ```bash
 sudo nano /etc/init.d/tvheadend
 ```
->_Copy the entire tvheadend_daemon file from repo in the file /etc/init.d/tvheadend_
+
 ```bash
 sudo chmod 755 /etc/init.d/tvheadend
 ```
@@ -70,7 +71,7 @@ Once the wizard completed come back to the Tvheadend bash.
 ```bash
 Ctrl+C
 ```
-
+  
 >_To start Tvheadend_
 ```bash
 sudo service tvheadend start
