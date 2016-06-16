@@ -1,28 +1,28 @@
 # My Debian install and configuration
 
 ## Preparing the USB stick
-1.  Download ISO file debian-*-amd64-netinst.iso
-2.  Copy the file to the USB stick with unetbootin
-3.  Boot on the USB stick
+*  Download ISO file debian-*-amd64-netinst.iso
+*  Copy the file to the USB stick with unetbootin
+*  Boot on the USB stick
 
 ## Debian installation
-1. Choose standard installation
-2. Softawre selection, uncheck all except SSH server and Standard system utilities
+* Choose standard installation
+* Softawre selection, uncheck all except SSH server and Standard system utilities
 
 ## Debian configuration
-1. Update / Upgrade
+### Update / Upgrade
 ```bash
 su root
 apt-get update
 apt-get upgrade
 ```
-2. Add "sudo" command
+### Add "sudo" command
 ```bash
 su root
 apt-get install sudo
 adduser lamda_user sudo
 ```
-3. Change SSH default port
+### Change SSH default port
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
@@ -31,7 +31,7 @@ _Port XXXX_
 sudo /etc/init.d/ssh restart
 ```
 
-4. Reduce wait time Grub
+### Reduce wait time Grub
 ```bash
 sudo nano /etc/default/grub
 ```
@@ -39,11 +39,11 @@ _GRUB_TIMEOUT = 0_
 ```bash
 sudo update-grub
 ```
-5. Install pm-utils
+### Install pm-utils
 ```bash
 sudo apt-get install pm-utils
 ```
-6. Static IP
+### Static IP
 ```bash
 sudo nano /etc/network/interfaces
 ```
