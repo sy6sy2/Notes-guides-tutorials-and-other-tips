@@ -44,7 +44,7 @@ sudo adduser hts sudo
 
 ## Create daemon
 The daemon allows us to use the _sudo tvheadend start_ and _sudo tvheadend stop_ command. Furthermore we can run Tvheadend on Debian start-up.
->_Copy the entire tvheadend_daemon file from repo in the file /etc/init.d/tvheadend_
+>Copy the entire tvheadend_daemon file from repo in the file /etc/init.d/tvheadend
 ```bash
 sudo nano /etc/init.d/tvheadend
 ```
@@ -67,13 +67,13 @@ su hts
 ```
 Now open a browser at _tvheadend_ip_:9981 and follow the Tvheadend wizard.
 Once the wizard completed come back to the Tvheadend bash.
-> _To kill the Tvheadend process_
+> To kill the Tvheadend process
 ```bash
 Ctrl+C
 ```
 
 Now we can run Tvheadend as a service
->_To start Tvheadend_
+>To start Tvheadend
 ```bash
 sudo service tvheadend start
 ```
