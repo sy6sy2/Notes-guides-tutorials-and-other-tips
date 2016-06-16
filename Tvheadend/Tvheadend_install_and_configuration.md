@@ -15,7 +15,7 @@ sudo apt-get install libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev
 ## Build and install
 ```bash
 cd /usr/src
-git clone https://github.com/tvheadend/tvheadend.git
+sudo git clone https://github.com/tvheadend/tvheadend.git
 cd tvheadend
 sudo ./configure
 ```
@@ -63,7 +63,7 @@ sudo update-rc.d tvheadend defaults
 The first run is particular because you have to run Tvheadend without user access control. After the Tvheadend wizard allow you to create an admin user.
 ```bash
 su hts
-/etc/init.d/tvheadend -C
+/usr/local/bin/tvheadend -C
 ```
 Now open a browser at _tvheadend_ip_:9981 and follow the Tvheadend wizard.
 Once the wizard completed come back to the Tvheadend bash.
@@ -71,7 +71,8 @@ Once the wizard completed come back to the Tvheadend bash.
 ```bash
 Ctrl+C
 ```
-  
+
+Now we can run Tvheadend as a service
 >_To start Tvheadend_
 ```bash
 sudo service tvheadend start
