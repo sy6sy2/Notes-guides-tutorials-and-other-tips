@@ -47,4 +47,9 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 </pre>
 
 ## Disbale Mac chime — boot sound
-
+[Source teored90 nobootsound](https://github.com/teored90/nobootsound)
+* Download this script : https://github.com/teored90/nobootsound
+* Install it with:
+<pre>
+sudo sh install.sh
+</pre>
