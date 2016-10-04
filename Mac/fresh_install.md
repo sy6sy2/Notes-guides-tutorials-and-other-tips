@@ -20,7 +20,7 @@ brew install python
 brew install python3
 </pre>
 
-## Install pip
+## Install pip (Usually pip comes with the python(3) installation)
 [pip Website](https://pip.pypa.io/en/stable/installing/)
 <pre>
 python get-pip.py
@@ -53,3 +53,7 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 <pre>
 sudo sh install.sh
 </pre>
+
+## Add "Open terminal here" in Finder toolbar
+[Source ZipZapMac Go2Shell](http://zipzapmac.com/Go2Shell)
+* Download and install Go2Shell : http://zipzapmac.com/Go2Shell
