@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 import requests
 import os.path
 from bs4 import BeautifulSoup
@@ -9,11 +8,16 @@ import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
-from email import encoders
+import email.Encoders as encoders
 import ntpath
 
 
 # Variables globales ####################################################
+
+
+
+fromaddr = 'c*****.s********@***.***'
+bccaddr = ['********.*****@***.***', '*******.*****@***.***']
 
 # URL des différentes pages
 url_root = 'http://www.fmv.ulg.ac.be/'
@@ -21,10 +25,10 @@ url_horaire = 'http://www.fmv.ulg.ac.be/cms/c_252999/horaires-des-cours/'
 url_gmv1 = 'http://www.fmv.ulg.ac.be/cms/c_268056/gmv-1/'
 login_url = 'https://www.intranet.ulg.ac.be/login'
 
-# payload pour la connexion
+# patload pour la connexion
 payload = {
-    "id": "********",
-    "password": "*********",
+    "id": "******",
+    "password": "******",
     "request_uri2": "http://www.fmv.ulg.ac.be/front/login.jsp?redirect=\
     http://www.fmv.ulg.ac.be/&portal=c_9813",
     "zone": "ulg",
@@ -33,12 +37,13 @@ payload = {
 
 
 # Fichiers de sauvegarde des dates antérieurs
+# last_horaire_file_path = '/home/user/last_horaire'
+# last_gmv1_file_path = '/home/user/last_gmv1'
 last_horaire_file_path = './last_horaire'
 last_gmv1_file_path = './last_gmv1'
 
-object_mail_horaire = 'ALERTE EDT : Mise à jour de la \
-                       page \"Horaires des cours\"'
-object_mail_gmv1 = 'ALERTE EDT : Mise à jour de la page \"GMV 1\"'
+object_mail_horaire = 'CHANGEMENT EDT : Mise à jour de la page \"Horaires des cours\"'
+object_mail_gmv1 = 'CHANGEMENT EDT : Mise à jour de la page \"GMV 1\"'
 
 common_text_mail = "Une mise à jour de l'emploi du temps a eu lieu ! \n\n"
 
@@ -53,10 +58,7 @@ text_mail_gmv1 = "La page \"GMV 1\" a été mise à\
 text_mail_gmv1_2 = "Se référer à l'extrait de la page web ci-dessous ainsi \
                     qu'au(x) pièce(s) jointe(s)."
 
-
-fromaddr = "***************@gmail.com"
-toaddr = ['***********', '**********]
-gmail_password = "************"
+gmail_password = "*************"
 gmail_smtp = "smtp.gmail.com"
 gmail_port = 587
 
@@ -171,8 +173,7 @@ if new_modif_horaire is True:
         extension_url.append(current_ext)
 
     msg = MIMEMultipart()
-    msg['From'] = fromaddr
-    msg['To'] = ", ".join(toaddr)
+    msg['From'] = 'Changement EDT ULg'
     msg['Subject'] = object_mail_horaire
 
     message = """\
@@ -217,7 +218,7 @@ if new_modif_horaire is True:
     server.starttls()
     server.login(fromaddr, gmail_password)
     text = msg.as_string()
-    server.sendmail(fromaddr, toaddr, text)
+    server.sendmail(fromaddr, bccaddr, text)
     server.quit()
 
 
@@ -244,8 +245,7 @@ if new_modif_gmv1 is True:
         extension_url.append(current_ext)
 
     msg = MIMEMultipart()
-    msg['From'] = fromaddr
-    msg['To'] = ", ".join(toaddr)
+    msg['From'] = 'Changement EDT ULg'
     msg['Subject'] = object_mail_gmv1
 
     message = """\
@@ -293,6 +293,5 @@ if new_modif_gmv1 is True:
     server.starttls()
     server.login(fromaddr, gmail_password)
     text = msg.as_string()
-    server.sendmail(fromaddr, toaddr, text)
+    server.sendmail(fromaddr, bccaddr, text)
     server.quit()
-
