@@ -20,12 +20,6 @@ brew install python
 brew install python3
 </pre>
 
-## Install pip (Usually pip comes with the python(3) installation)
-[pip Website](https://pip.pypa.io/en/stable/installing/)
-<pre>
-python get-pip.py
-</pre>
-
 ## Enable NTFS write support
 [Source macplanete](http://www.macplanete.com/tutoriels/18685/ntfs-el-capitan-activer)
 * Download the latest osxfuse realease : [osxfuse](https://github.com/osxfuse/osxfuse/releases)
