@@ -51,3 +51,12 @@ sudo sh install.sh
 ## Add "Open terminal here" in Finder toolbar
 [Source ZipZapMac Go2Shell](http://zipzapmac.com/Go2Shell)
 * Download and install Go2Shell : http://zipzapmac.com/Go2Shell
+
+## Other app to install
+* [BeardedSpice] (http://beardedspice.github.io) — Enable media keys found on Mac keyboards for web based media player
+* [Amphetamine] (https://www.producthunt.com/tech/amphetamine) — Keep Mac awake
+* [f.lux] (https://justgetflux.com) — Blue light reducer for Macbook
+* [iStat Menus] (https://bjango.com/mac/istatmenus/) — Menubar system monitor [(profile settings)](https://github.com/SylvainCecchetto/Notes-guides-tutorials-and-other-tips/blob/master/Mac/iStat_Menus_Settings.ismp)
+* [BetterTouchTool] (https://www.boastr.net) — Configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad
+* [Sublime Text] (http://www.sublimetext.com) — Text editor for code
+* [Postman] (https://www.getpostman.com) — Test API, web requests
