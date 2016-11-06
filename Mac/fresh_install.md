@@ -63,3 +63,16 @@ sudo sh install.sh
 * [Postman] (https://www.getpostman.com) — Test API, web requests
 * [VLC] (https://www.videolan.org/vlc/) — VLC media player, lecteur vidéo Open Source
 * [Franz] (http://meetfranz.com) — All in one messaging client
+
+## Macbook "System Preferences"
+### Général
+* Cocher "Utiliser une barrre des menus et un Dock foncés"
+* Cocher "Confirmer les modifictions à la fermeture des documents"
+* Décocher "Fermer les fenêtres à la fermeture d'une application"
+
+### Mission Control
+* Décocher "Réarranger automatiquement les Spaces en fonction de votre utilisation la plus récente"
+* Cocher "Lors du changement d'application, activer un Space avec les fenêtres de l'application"
+* Décocher "Grouper les fenêtre par application"
+* Cocher "Les écrans disposent de Spaces distincts"
+* Dashboard : Désactiver
