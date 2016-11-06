@@ -60,3 +60,4 @@ sudo sh install.sh
 * [BetterTouchTool] (https://www.boastr.net) — Configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad
 * [Sublime Text] (http://www.sublimetext.com) — Text editor for code
 * [Postman] (https://www.getpostman.com) — Test API, web requests
+* [VLC] (https://www.videolan.org/vlc/) — VLC media player, lecteur vidéo Open Source
