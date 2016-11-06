@@ -61,3 +61,4 @@ sudo sh install.sh
 * [Sublime Text] (http://www.sublimetext.com) — Text editor for code
 * [Postman] (https://www.getpostman.com) — Test API, web requests
 * [VLC] (https://www.videolan.org/vlc/) — VLC media player, lecteur vidéo Open Source
+* [Franz] (http://meetfranz.com) — All in one messaging client
