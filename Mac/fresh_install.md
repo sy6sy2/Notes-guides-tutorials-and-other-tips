@@ -59,6 +59,7 @@ sudo sh install.sh
 * [iStat Menus] (https://bjango.com/mac/istatmenus/) — Menubar system monitor [(profile settings)](https://github.com/SylvainCecchetto/Notes-guides-tutorials-and-other-tips/blob/master/Mac/iStat_Menus_Settings.ismp)
 * [BetterTouchTool] (https://www.boastr.net) — Configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad
 * [Sublime Text] (http://www.sublimetext.com) — Text editor for code
+    * [Package Control] (https://packagecontrol.io) — The Sublime Text package manager
 * [Postman] (https://www.getpostman.com) — Test API, web requests
 * [VLC] (https://www.videolan.org/vlc/) — VLC media player, lecteur vidéo Open Source
 * [Franz] (http://meetfranz.com) — All in one messaging client
