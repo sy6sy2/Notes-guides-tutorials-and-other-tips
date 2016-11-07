@@ -70,9 +70,52 @@ sudo sh install.sh
 * Cocher "Confirmer les modifictions à la fermeture des documents"
 * Décocher "Fermer les fenêtres à la fermeture d'une application"
 
+### Dock
+* Préférer les onglets pour l'ouverture des documents : Manuellement
+* Cocher "Cliquez deux fois sur la berre de titre d'une fenêtre pour placer dans le dock"
+* Décocher "Réduire les fenêtres dans l'icône de l'application"
+* Cocher "Animer les applications lors de leur ouverture"
+* Cocher "Masquer/afficher automatiquement le Dock"
+* Cocher "Afficher les indicateurs des applications ouvertes"
+
 ### Mission Control
 * Décocher "Réarranger automatiquement les Spaces en fonction de votre utilisation la plus récente"
 * Cocher "Lors du changement d'application, activer un Space avec les fenêtres de l'application"
 * Décocher "Grouper les fenêtre par application"
 * Cocher "Les écrans disposent de Spaces distincts"
 * Dashboard : Désactiver
+* Coins actifs :
+    * Haut gauche : Mission Control
+    * Bas gauche : Fenêtres de l'application
+    * Haut droite : Launchpad
+    * Bas droite : Bureau
+    
+### Sécurité et confidentialité :
+* Général :
+    * Cocher "Exiger le mot de passe 5 secondes après la suspension d'activité
+    * Cocher "Afficher un message lorsque l'écran est verrouillé"
+    * Autoriser les applications téléchargées de App Store et développeurs identifiés
+* FileVault : Activer
+* Coupe-feu : Activer
+
+### Trackpad
+* Pointer et cliquer :
+    * Recherche et détection de données : Clic forcé à un doigt
+    * Clic secondaire : cliquer ou toucher avec 2 doigts
+    * Cocher "Toucher pour cliquer"
+    * Clic : Léger
+    * Cocher "Clic silencieux"
+    * Cocher "Clic forcé et retour tactile"
+* Faire défiler et zoomer
+    * Cocher "Sens du défilement : naturel"
+    * Cocher "Zoom avant ou arrière"
+    * Cocher "Zoom intelligent"
+    * Cocher "Pivoter"
+* Gestes supplémentaires
+    * Balayer entre les pages : Balayer avec 3 doigts
+    * Balayer entre apps en plein écran : Balayer latéralement avec 4 doigts
+    * Centre de notifications : Balayer de la droite vers la gauche avc 2 doigts
+    * Mission Control : Balayer vers le haut avec 4 doigts
+    * App Exposé : Balayer vers le bas avec 4 doigts
+    * Launchpad : Pincer avec le pouce et 3 doigts
+    * Afficher le bureau : Écarter le mouce et 3 doigts
