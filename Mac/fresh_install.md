@@ -61,7 +61,7 @@ sudo sh install.sh
 * [Sublime Text] (http://www.sublimetext.com) — Text editor for code
     * [Package Control] (https://packagecontrol.io) — The Sublime Text package manager
     * [Anaconda] (http://damnwidget.github.io/anaconda/) — Python IDE for Sublime Text
-    * [Markdown Editing] (https://github.com/SublimeText-Markdown/MarkdownEditing — Markdown color scheme for Sublime Text
+    * [Markdown Editing] (https://github.com/SublimeText-Markdown/MarkdownEditing) — Markdown color scheme for Sublime Text
 * [Postman] (https://www.getpostman.com) — Test API, web requests
 * [VLC] (https://www.videolan.org/vlc/) — VLC media player, lecteur vidéo Open Source
 * [Franz] (http://meetfranz.com) — All in one messaging client
