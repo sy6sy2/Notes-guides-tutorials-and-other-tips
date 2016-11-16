@@ -75,7 +75,7 @@ sudo sh install.sh
 * Cocher "Cliquez deux fois sur la berre de titre d'une fenêtre pour placer dans le dock"
 * Décocher "Réduire les fenêtres dans l'icône de l'application"
 * Cocher "Animer les applications lors de leur ouverture"
-* Cocher "Masquer/afficher automatiquement le Dock"
+* Décocher "Masquer/afficher automatiquement le Dock"
 * Cocher "Afficher les indicateurs des applications ouvertes"
 
 ### Mission Control
@@ -85,10 +85,10 @@ sudo sh install.sh
 * Cocher "Les écrans disposent de Spaces distincts"
 * Dashboard : Désactiver
 * Coins actifs :
-    * Haut gauche : Mission Control
-    * Bas gauche : Fenêtres de l'application
-    * Haut droite : Launchpad
-    * Bas droite : Bureau
+    * Haut gauche : —
+    * Bas gauche : —
+    * Haut droite : —
+    * Bas droite : —
     
 ### Sécurité et confidentialité :
 * Général :
@@ -101,7 +101,7 @@ sudo sh install.sh
 ### Trackpad
 * Pointer et cliquer :
     * Recherche et détection de données : Clic forcé à un doigt
-    * Clic secondaire : cliquer ou toucher avec 2 doigts
+    * Clic secondaire : Cliquer ou toucher avec 2 doigts
     * Cocher "Toucher pour cliquer"
     * Clic : Léger
     * Cocher "Clic silencieux"
@@ -118,4 +118,4 @@ sudo sh install.sh
     * Mission Control : Balayer vers le haut avec 4 doigts
     * App Exposé : Balayer vers le bas avec 4 doigts
     * Launchpad : Pincer avec le pouce et 3 doigts
-    * Afficher le bureau : Écarter le mouce et 3 doigts
+    * Afficher le bureau : Écarter le pouce et 3 doigts
