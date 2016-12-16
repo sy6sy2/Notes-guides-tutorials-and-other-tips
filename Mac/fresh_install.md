@@ -14,6 +14,11 @@ brew doctor
 ## Modify the default .bash_profile
 [.bash_profile](https://github.com/SylvainCecchetto/Notes-guides-tutorials-and-other-tips/blob/master/Mac/.bash_profile)
 
+## Improve QuickLook macOS feature
+<pre>
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv betterzipql qlimagesize qlvideo
+</pre>
+
 ## Install Python
 <pre>
 brew install python
