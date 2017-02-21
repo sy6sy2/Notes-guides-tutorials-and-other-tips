@@ -50,9 +50,6 @@ PATH="$HOME"/bin:/opt/local/bin:/usr/local/bin:usr/local/sbin:"$PATH"
 export PATH
 </pre>
 
-## Modify the default .bash_profile
-[.bash_profile](https://github.com/SylvainCecchetto/Notes-guides-tutorials-and-other-tips/blob/master/Mac/.bash_profile)
-
 ## Improve QuickLook macOS feature
 <pre>
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv betterzipql qlimagesize qlvideo
