@@ -1,14 +1,53 @@
 # Things to do after a clean/fresh install of Mac OS X
 Last update for Mac OS X El Capitan 10.11.5
 
-## Install iTerm 
-[iTerm2 Website](https://iterm2.com)
-
 ## Install Homebrew 
 [Homebrew website](https://brew.sh)
 <pre>
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
+</pre>
+
+## iTerm2 + Oh My Zsh + Powerlevel9k 
+* Install iTerm2 with Homebrew
+<pre>
+brew cask install iterm2
+</pre>
+* Install Oh My Zsh
+<pre>
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+</pre>
+* Install Powerlevel9k theme
+<pre>
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+</pre>
+Then edit your `~/.zshrc` and set `ZSH_THEME="powerlevel9k/powerlevel9k"`
+* Install Material Dark color scheme
+Download the color scheme [Material Dark](https://github.com/stoeffel/material-iterm/raw/master/material-dark.itermcolors) and install it.
+Choose it in iTerm2 -> Preferences -> Profiles -> Default -> Colors
+
+* Install Powerline fonts
+<pre>
+cd /tmp
+git clone https://github.com/powerline/fonts
+./fonts/install.sh
+</pre>
+Choose your favorite Powerline font in iTerm2 -> Preferences -> Profiles -> Default -> Text
+
+* Enable plugins
+Then edit your `~/.zshrc` and set `plugins=(sublime git z history osx brew pip)`
+
+* Install Zsh Syntax Hightlighting
+<pre>
+brew install zsh-syntax-highlighting
+</pre>
+Follow brew instructions
+
+* Set the correct PATH for brew
+Edit your `~/.zshrc` and set
+<pre>
+PATH="$HOME"/bin:/opt/local/bin:/usr/local/bin:usr/local/sbin:"$PATH"
+export PATH
 </pre>
 
 ## Modify the default .bash_profile
