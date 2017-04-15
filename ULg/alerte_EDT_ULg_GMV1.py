@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import requests
 import os.path
@@ -17,11 +17,11 @@ from difflib import Differ
 
 # e-mails
 
-from_addr = '**********.******@gmail.com'
-# bcc_addr = ['*******.*********@me.com', '********.*********@gmail.com']
-bcc_addr = ['**********.**********@me.com']
+from_addr = 'c******.*******@g*****'
+bcc_addr = ['c*****************@****', 'c*****************@****', 'c*****************@****', 'c*****************@****', 'm*****************@****' ,'p*****************@****']
 
-gmail_password = "*****************"
+
+gmail_password = "m********************"
 gmail_smtp = "smtp.gmail.com"
 gmail_port = 587
 
@@ -57,7 +57,7 @@ url_gmv1 = 'http://www.fmv.ulg.ac.be/cms/c_268056/gmv-1/'
 login_url = 'https://www.intranet.ulg.ac.be/login'
 
 payload = {
-    "id": "*******",
+    "id": "s******",
     "password": "**********",
     "request_uri2": "http://www.fmv.ulg.ac.be/front/login.jsp?redirect=\
     http://www.fmv.ulg.ac.be/&portal=c_9813",
@@ -225,22 +225,22 @@ if __name__ == '__main__':
 
 
         new_message = ""
-        if os.path.exists(message_horaire_file_path):     
+        if os.path.exists(message_horaire_file_path):
             message_horaire_file = open(message_horaire_file_path, 'r')
             message_horaire = message_horaire_file.read()
             message_horaire_file.close()
-            l1 = message.split(' ')
-            l2 = message_horaire.split(' ')
+            l1 = message_horaire.split(' ')
+            l2 = message.split(' ')
             dif = list(Differ().compare(l1, l2))
             new_message =  " ".join(['<span style="background-color:#40ff00;" >'+i[2:]+'</span>' if i[:1] == '+' else i[2:] for i in dif if not i[:1] in '-?'])
         else:
             new_message = message
 
-        
+
         message_horaire_file = open(message_horaire_file_path, "w")
         message_horaire_file.write(message)
         message_horaire_file.close()
-      
+
         send_mail(object_mail_horaire, new_message, useful_files)
 
 
@@ -291,18 +291,18 @@ if __name__ == '__main__':
         """ % (text_mail_gmv1, datemaj_gmv1, text_mail_gmv1_2, " <br> ".join(content_text.split("\n")), " <br> ".join(liens.split("\n")) )
 
         new_message = ""
-        if os.path.exists(message_gmv1_file_path):     
+        if os.path.exists(message_gmv1_file_path):
             message_gmv1_file = open(message_gmv1_file_path, 'r')
             message_gmv1 = message_gmv1_file.read()
             message_gmv1_file.close()
-            l1 = message.split(' ')
-            l2 = message_gmv1.split(' ')
+            l1 = message_gmv1.split(' ')
+            l2 = message.split(' ')
             dif = list(Differ().compare(l1, l2))
             new_message =  " ".join(['<span style="background-color:#40ff00;" >'+i[2:]+'</span>' if i[:1] == '+' else i[2:] for i in dif if not i[:1] in '-?'])
         else:
             new_message = message
 
-        
+
         message_gmv1_file = open(message_gmv1_file_path, "w")
         message_gmv1_file.write(message)
         message_gmv1_file.close()
